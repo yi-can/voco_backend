@@ -1,0 +1,5 @@
+rootProject.name = 'voco_task'
+include 'auth_service'
+include 'vocoTask'
+include 'RestaurantService'
+
