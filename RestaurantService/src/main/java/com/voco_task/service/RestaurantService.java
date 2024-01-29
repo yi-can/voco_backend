@@ -8,6 +8,9 @@ import com.voco_task.utility.JwtTokenManager;
 import com.voco_task.utility.ServiceManager;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class RestaurantService extends ServiceManager<Restaurant, String> {
 
@@ -23,7 +26,9 @@ public class RestaurantService extends ServiceManager<Restaurant, String> {
 
     public void createRestaurant(AuthRestaurantModel model) {
         Restaurant restaurant = IRestaurantMapper.INSTANCE.toRegisterRestaurant(model);
+        List<String> latitude = new ArrayList<>();
+        latitude.add("dede");
+        restaurant.setLatitude(latitude);
         save(restaurant);
-
     }
 }

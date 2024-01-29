@@ -24,7 +24,7 @@ public class Restaurant extends BaseEntity{
     private List<String> address;
     private List<String> latitude;
     private List<String> longitude;
-    private List<String> foodId;
+    private List<String> foodId;//exxel e ile veri yükleyelim sonrasında
     private List<String> commentId;
     private List<String> likeId;
     private List<String> orders;

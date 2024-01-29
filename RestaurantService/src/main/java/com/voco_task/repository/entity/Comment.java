@@ -19,4 +19,5 @@ public class Comment extends BaseEntity{
     private String comment;
     private String userId; //yorum yapan kişinin id'si
     private String username; //yorum yapan kişinin adı
+    //command de argo kelimeleri filtreden geçirelim
 }

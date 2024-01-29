@@ -22,4 +22,5 @@ public class Order extends BaseEntity{
     private List<String> foodId;//sipariş verilen yemekler
     private List<String> userId;//sipariş veren kişiler
     private LocalTime time;
+
 }
